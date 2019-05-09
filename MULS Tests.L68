@@ -1,0 +1,26 @@
+00009000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 3/12/2019 5:33:48 PM
+
+00009000                             1      ORG    $9000
+00009000                             2  
+00009000  C5FC 1234                  3      MULS.W #$1234,D2
+00009004  C9FC 2919                  4      MULS.W #$2919,D4
+00009008  C9C3                       5      MULS.W D3,D4
+0000900A  C9D1                       6      MULS.W (A1),D4
+0000900C  C9D9                       7      MULS.W (A1)+,D4
+0000900E  C9E1                       8      MULS.W -(A1),D4
+00009010  C9F8 4002                  9      MULS.W $4002,D4
+00009014  C9F9 00009000             10      MULS.W $9000,D4
+0000901A  C9F8 4002                 11      MULS.W $00004002,D4
+0000901E  C9F9 000F9000             12      MULS.W $000F9000,D4
+00009024                            13  
+00009024                            14      END    $9000
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------

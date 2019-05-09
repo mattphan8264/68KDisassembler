@@ -1,0 +1,26 @@
+00004000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 5/30/2018 20:36:49
+
+00004000                             1      ORG    $4000
+00004000                             2  
+00004000  C4FC 1234                  3      MULU.W #$1234,D2
+00004004  C8FC 2919                  4      MULU.W #$2919,D4
+00004008  C8C3                       5      MULU.W D3,D4
+0000400A  C8D1                       6      MULU.W (A1),D4
+0000400C  C8D9                       7      MULU.W (A1)+,D4
+0000400E  C8E1                       8      MULU.W -(A1),D4
+00004010  C8F8 4002                  9      MULU.W $4002,D4
+00004014  C8F9 00009000             10      MULU.W $9000,D4
+0000401A  C8F8 4002                 11      MULU.W $00004002,D4
+0000401E  C8F9 000F9000             12      MULU.W $000F9000,D4
+00004024                            13  
+00004024                            14      END    $4000
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------

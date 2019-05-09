@@ -1,0 +1,33 @@
+00004000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 5/30/2018 20:02:35
+
+00004000                             1      ORG    $4000
+00004000                             2  
+00004000  D0C4                       3      ADDA.W D4,A0
+00004002  D2CA                       4      ADDA.W A2,A1
+00004004  D4D2                       5      ADDA.W (A2),A2
+00004006  D6E2                       6      ADDA.W -(A2),A3
+00004008  D8DA                       7      ADDA.W (A2)+,A4
+0000400A  DAF8 4002                  8      ADDA.W $4002,A5
+0000400E  DCF9 00009000              9      ADDA.W $9000,A6
+00004014  DEFC 0023                 10      ADDA.W #$23,A7
+00004018                            11  
+00004018  DFFC 00000034             12      ADDA.L #$34,A7
+0000401E  DDC4                      13      ADDA.L D4,A6
+00004020  DBCA                      14      ADDA.L A2,A5
+00004022  D9D2                      15      ADDA.L (A2),A4
+00004024  D7E2                      16      ADDA.L -(A2),A3
+00004026  D5DA                      17      ADDA.L (A2)+,A2
+00004028  D3F8 4002                 18      ADDA.L $4002,A1
+0000402C  D1F9 00009000             19      ADDA.L $9000,A0
+00004032                            20  
+00004032                            21      END    $4000
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------

@@ -1,0 +1,22 @@
+00009000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 3/13/2019 8:26:36 PM
+
+00009000                             1      ORG     $9000
+00009000                             2  
+00009000  41D5                       3      LEA     (A5),A0
+00009002  43F8 4002                  4      LEA     $4002,A1
+00009006  45F8 4002                  5      LEA     $00004002,A2
+0000900A  47F9 00009000              6      LEA     $9000,A3
+00009010  49F9 000F9000              7      LEA     $00F9000,A4
+00009016  4FD6                       8      LEA     (A6),A7
+00009018                             9  
+00009018                            10      END     $9000
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------

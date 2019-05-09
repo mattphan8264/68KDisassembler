@@ -1,0 +1,22 @@
+00004000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 5/30/2018 20:18:40
+
+00004000                             1      ORG     $4000
+00004000                             2  
+00004000  6FF6                       3      BLE     $3FF8 *F6
+00004002  6F04                       4      BLE     $4008 *04
+00004004  6F00 DFFA                  5      BLE     $2000 *DFFA
+00004008  6F00 1FF6                  6      BLE     $6000 *1FF6
+0000400C  6F00 7FFF                  7      BLE     $C00D *7FFF
+00004010  6F00 BFEE                  8      BLE     $0    *BFEE
+00004014                             9  
+00004014                            10      END     $4000
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------

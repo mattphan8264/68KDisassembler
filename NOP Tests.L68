@@ -1,0 +1,19 @@
+00004000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 5/30/2018 20:37:45
+
+00004000                             1      ORG    $4000
+00004000                             2  
+00004000  4E71                       3      NOP
+00004002  4E71                       4      NOP
+00004004  4E71                       5      NOP
+00004006                             6  
+00004006                             7      END    $4000
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------

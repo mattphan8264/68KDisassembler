@@ -1,0 +1,82 @@
+00009000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 3/12/2019 5:42:21 PM
+
+00009000                             1      ORG     $9000
+00009000                             2  
+00009000  E2D0                       3      LSR     (A0)
+00009002  E2D9                       4      LSR     (A1)+
+00009004  E2E2                       5      LSR     -(A2)
+00009006  E2F8 3000                  6      LSR     $3000
+0000900A  E2F9 000F9000              7      LSR     $F9000
+00009010  E2D3                       8      LSR     (A3)
+00009012  E2DC                       9      LSR     (A4)+
+00009014  E2E5                      10      LSR     -(A5)
+00009016  E2D6                      11      LSR     (A6)
+00009018  E2DF                      12      LSR     (A7)+
+0000901A  E2F8 0001                 13      LSR     $0001
+0000901E  E2F9 00FFFFFF             14      LSR     $FFFFFF
+00009024                            15  
+00009024  E20F                      16      LSR.B   #1,D7
+00009026  E40E                      17      LSR.B   #2,D6
+00009028  E60D                      18      LSR.B   #3,D5
+0000902A  E80C                      19      LSR.B   #4,D4
+0000902C  EA0B                      20      LSR.B   #5,D3
+0000902E  EC0A                      21      LSR.B   #6,D2
+00009030  EE09                      22      LSR.B   #7,D1
+00009032  E008                      23      LSR.B   #8,D0
+00009034                            24  
+00009034  E24F                      25      LSR.W   #1,D7
+00009036  E44E                      26      LSR.W   #2,D6
+00009038  E64D                      27      LSR.W   #3,D5
+0000903A  E84C                      28      LSR.W   #4,D4
+0000903C  EA4B                      29      LSR.W   #5,D3
+0000903E  EC4A                      30      LSR.W   #6,D2
+00009040  EE49                      31      LSR.W   #7,D1
+00009042  E048                      32      LSR.W   #8,D0
+00009044                            33  
+00009044  E28F                      34      LSR.L   #1,D7
+00009046  E48E                      35      LSR.L   #2,D6
+00009048  E68D                      36      LSR.L   #3,D5
+0000904A  E88C                      37      LSR.L   #4,D4
+0000904C  EA8B                      38      LSR.L   #5,D3
+0000904E  EC8A                      39      LSR.L   #6,D2
+00009050  EE89                      40      LSR.L   #7,D1
+00009052  E088                      41      LSR.L   #8,D0
+00009054                            42  
+00009054  E02F                      43      LSR.B   D0,D7
+00009056  E22E                      44      LSR.B   D1,D6
+00009058  E42D                      45      LSR.B   D2,D5
+0000905A  E62C                      46      LSR.B   D3,D4
+0000905C  E82B                      47      LSR.B   D4,D3
+0000905E  EA2A                      48      LSR.B   D5,D2
+00009060  EC29                      49      LSR.B   D6,D1
+00009062  EE28                      50      LSR.B   D7,D0
+00009064                            51  
+00009064  E06F                      52      LSR.W   D0,D7
+00009066  E26E                      53      LSR.W   D1,D6
+00009068  E46D                      54      LSR.W   D2,D5
+0000906A  E66C                      55      LSR.W   D3,D4
+0000906C  E86B                      56      LSR.W   D4,D3
+0000906E  EA6A                      57      LSR.W   D5,D2
+00009070  EC69                      58      LSR.W   D6,D1
+00009072  EE68                      59      LSR.W   D7,D0
+00009074                            60  
+00009074  E0AF                      61      LSR.L   D0,D7
+00009076  E2AE                      62      LSR.L   D1,D6
+00009078  E4AD                      63      LSR.L   D2,D5
+0000907A  E6AC                      64      LSR.L   D3,D4
+0000907C  E8AB                      65      LSR.L   D4,D3
+0000907E  EAAA                      66      LSR.L   D5,D2
+00009080  ECA9                      67      LSR.L   D6,D1
+00009082  EEA8                      68      LSR.L   D7,D0
+00009084                            69  
+00009084                            70      END     $9000
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------

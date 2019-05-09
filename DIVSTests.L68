@@ -1,0 +1,26 @@
+00009000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 3/12/2019 6:46:48 PM
+
+00009000                             1      ORG    $9000
+00009000                             2  
+00009000  85FC 1234                  3      DIVS.W #$1234,D2
+00009004  89FC 2919                  4      DIVS.W #$2919,D4
+00009008  89C3                       5      DIVS.W D3,D4
+0000900A  89D1                       6      DIVS.W (A1),D4
+0000900C  89D9                       7      DIVS.W (A1)+,D4
+0000900E  89E1                       8      DIVS.W -(A1),D4
+00009010  89F8 4002                  9      DIVS.W $4002,D4
+00009014  89F9 00009000             10      DIVS.W $9000,D4
+0000901A  89F8 4002                 11      DIVS.W $00004002,D4
+0000901E  89F9 000F9000             12      DIVS.W $000F9000,D4
+00009024                            13  
+00009024                            14      END    $9000
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------

@@ -1,0 +1,33 @@
+00004000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 3/2/2019 6:51:47 PM
+
+00004000                             1      ORG    $4000
+00004000                             2  
+00004000  4241                       3      CLR.W   D1
+00004002  4259                       4      CLR.W   (A1)+
+00004004  4261                       5      CLR.W   -(A1)
+00004006  4251                       6      CLR.W   (A1)
+00004008                             7  
+00004008  4242                       8      CLR.W   D2
+0000400A  425B                       9      CLR.W   (A3)+
+0000400C  4264                      10      CLR.W   -(A4)
+0000400E  4255                      11      CLR.W   (A5)
+00004010                            12  
+00004010  4239 00019000             13      CLR.B   $19000
+00004016  4279 00009000             14      CLR.W   $9000
+0000401C  42B9 00009000             15      CLR.L   $9000
+00004022                            16  
+00004022  4238 7391                 17      CLR.B   $00007391
+00004026  4278 7000                 18      CLR.W   $00007000
+0000402A  42B8 7000                 19      CLR.L   $00007000
+0000402E                            20  
+0000402E                            21      END $4000
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------

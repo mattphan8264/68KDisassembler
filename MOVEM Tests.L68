@@ -1,0 +1,29 @@
+00004000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 5/30/2018 20:32:15
+
+00004000                             1      ORG    $4000
+00004000                             2  
+00004000  48A7 2000                  3      MOVEM.W D2,-(A7)
+00004004  48A7 0004                  4      MOVEM.W A5,-(A7)
+00004008  48A7 2010                  5      MOVEM.W D2/A3,-(A7)
+0000400C  4C98 0004                  6      MOVEM.W (A0)+,D2
+00004010  4C9A 2000                  7      MOVEM.W (A2)+,A5
+00004014  4C9F 0804                  8      MOVEM.W (A7)+,D2/A3
+00004018  4C93 3804                  9      MOVEM.W (A3),D2/A3-A5
+0000401C  4CB8 3804 5000            10      MOVEM.W $5000,D2/A3-A5
+00004022  4CB9 3A17 000F5000        11      MOVEM.W $F5000,D0-D2/D4/A1/A3-A5
+0000402A                            12  
+0000402A  48F8 FFFF 5000            13      MOVEM.L D0-D7/A0-A7,$5000
+00004030  48F9 8181 000F9000        14      MOVEM.L D0/D7/A0/A7,$F9000
+00004038  4CF8 FFFF 5000            15      MOVEM.L $5000,D0-D7/A0-A7
+0000403E                            16  
+0000403E                            17      END    $4000
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------

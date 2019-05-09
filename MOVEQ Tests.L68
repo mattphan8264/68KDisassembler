@@ -1,0 +1,24 @@
+00004000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 5/30/2018 20:34:49
+
+00004000                             1     ORG      $4000
+00004000                             2  
+00004000  7000                       3     MOVEQ    #$00,D0
+00004002  7219                       4     MOVEQ    #$19,D1
+00004004  7428                       5     MOVEQ    #$28,D2
+00004006  7637                       6     MOVEQ    #$37,D3
+00004008  7846                       7     MOVEQ    #$46,D4
+0000400A  7A55                       8     MOVEQ    #$55,D5
+0000400C  7C64                       9     MOVEQ    #$64,D6
+0000400E  7E73                      10     MOVEQ    #$73,D7
+00004010                            11  
+00004010                            12     END      $4000
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------

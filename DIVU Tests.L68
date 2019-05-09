@@ -1,0 +1,26 @@
+00004000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 5/30/2018 20:23:43
+
+00004000                             1      ORG    $4000
+00004000                             2  
+00004000  84FC 1234                  3      DIVU.W #$1234,D2
+00004004  84C3                       4      DIVU.W D3,D2
+00004006  88D1                       5      DIVU.W (A1),D4
+00004008  82D9                       6      DIVU.W (A1)+,D1
+0000400A  8AE1                       7      DIVU.W -(A1),D5
+0000400C  82F8 4002                  8      DIVU.W $4002,D1
+00004010  88F9 00009000              9      DIVU.W $9000,D4
+00004016  86F8 4002                 10      DIVU.W $00004002,D3
+0000401A  82F9 000F9000             11      DIVU.W $000F9000,D1
+00004020  86FC 71FF                 12      DIVU.W #29183,D3
+00004024                            13  
+00004024                            14      END    $4000
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------

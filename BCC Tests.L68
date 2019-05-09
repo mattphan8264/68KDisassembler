@@ -1,0 +1,51 @@
+00009000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 3/17/2019 8:16:28 PM
+
+00009000                             1      ORG     $9000
+00009000                             2  
+00009000  64FE                       3      BCC     $9000    *BFEE
+00009002  6400 AFF4                  4      BCC     $3FF8 *F6
+00009006  6400 B000                  5      BCC     $4008 *04
+0000900A  6400 8FF4                  6      BCC     $2000 *DFFA
+0000900E  6400 CFF0                  7      BCC     $6000 *1FF6
+00009012  6400 2FF9                  8      BCC     $C00D *7FFF
+00009016  64E8                       9      BCC     $9000    *BFEE
+00009018                            10      
+00009018  6C00 AFDE                 11      BGE     $3FF8 *F6
+0000901C  6C00 AFEA                 12      BGE     $4008 *04
+00009020  6C00 8FDE                 13      BGE     $2000 *DFFA
+00009024  6C00 CFDA                 14      BGE     $6000 *1FF6
+00009028  6C00 2FE3                 15      BGE     $C00D *7FFF
+0000902C  6CD2                      16      BGE     $9000    *BFEE
+0000902E                            17      
+0000902E  6500 AFC8                 18      BCS     $3FF8 *F6
+00009032  6500 AFD4                 19      BCS     $4008 *04
+00009036  6500 8FC8                 20      BCS     $2000 *DFFA
+0000903A  6500 CFC4                 21      BCS     $6000 *1FF6
+0000903E  6500 2FCD                 22      BCS     $C00D *7FFF
+00009042  65BC                      23      BCS     $9000    *BFEE
+00009044                            24      
+00009044  6D00 AFB2                 25      BLT     $3FF8 *F6
+00009048  6D00 AFBE                 26      BLT     $4008 *04
+0000904C  6D00 8FB2                 27      BLT     $2000 *DFFA
+00009050  6D00 CFAE                 28      BLT     $6000 *1FF6
+00009054  6D00 2FB7                 29      BLT     $C00D *7FFF
+00009058  6DA6                      30      BLT     $9000    *BFEE
+0000905A                            31      
+0000905A  6800 AF9C                 32      BVC     $3FF8 *F6
+0000905E  6800 AFA8                 33      BVC     $4008 *04
+00009062  6800 8F9C                 34      BVC     $2000 *DFFA
+00009066  6800 CF98                 35      BVC     $6000 *1FF6
+0000906A  6800 2FA1                 36      BVC     $C00D *7FFF
+0000906E  6890                      37      BVC     $9000    *BFEE
+00009070                            38  
+00009070                            39      END     $9000
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------

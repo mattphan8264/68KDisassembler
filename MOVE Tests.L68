@@ -1,0 +1,81 @@
+00004000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 5/30/2018 20:29:37
+
+00004000                             1      ORG    $4000
+00004000                             2  
+00004000  1200                       3      MOVE.B  D0,D1
+00004002  3209                       4      MOVE.W  A1,D1
+00004004  2212                       5      MOVE.L  (A2),D1
+00004006  341B                       6      MOVE.W  (A3)+,D2
+00004008  3424                       7      MOVE.W  -(A4),D2
+0000400A  2638 1234                  8      MOVE.L  $1234,D3
+0000400E  2639 000A1234              9      MOVE.L  $000A1234,D3
+00004014  183C 001A                 10      MOVE.B  #$1A,D4
+00004018  383C 1A1A                 11      MOVE.W  #$1A1A,D4
+0000401C  283C 1F1A1F1A             12      MOVE.L  #$1F1A1F1A,D4
+00004022                            13  
+00004022  1280                      14      MOVE.B  D0,(A1)
+00004024  3289                      15      MOVE.W  A1,(A1)
+00004026  2292                      16      MOVE.L  (A2),(A1)
+00004028  349B                      17      MOVE.W  (A3)+,(A2)
+0000402A  34A4                      18      MOVE.W  -(A4),(A2)
+0000402C  26B8 1234                 19      MOVE.L  $1234,(A3)
+00004030  26B9 000A1234             20      MOVE.L  $000A1234,(A3)
+00004036  18BC 001A                 21      MOVE.B  #$1A,(A4)
+0000403A  38BC 1A1A                 22      MOVE.W  #$1A1A,(A4)
+0000403E  28BC 1F1A1F1A             23      MOVE.L  #$1F1A1F1A,(A4)
+00004044                            24  
+00004044  12C0                      25      MOVE.B  D0,(A1)+
+00004046  32C9                      26      MOVE.W  A1,(A1)+
+00004048  22D2                      27      MOVE.L  (A2),(A1)+
+0000404A  34DB                      28      MOVE.W  (A3)+,(A2)+
+0000404C  34E4                      29      MOVE.W  -(A4),(A2)+
+0000404E  26F8 1234                 30      MOVE.L  $1234,(A3)+
+00004052  26F9 000A1234             31      MOVE.L  $000A1234,(A3)+
+00004058  18FC 001A                 32      MOVE.B  #$1A,(A4)+
+0000405C  38FC 1A1A                 33      MOVE.W  #$1A1A,(A4)+
+00004060  28FC 1F1A1F1A             34      MOVE.L  #$1F1A1F1A,(A4)+
+00004066                            35  
+00004066  1300                      36      MOVE.B  D0,-(A1)
+00004068  3309                      37      MOVE.W  A1,-(A1)
+0000406A  2312                      38      MOVE.L  (A2),-(A1)
+0000406C  351B                      39      MOVE.W  (A3)+,-(A2)
+0000406E  3524                      40      MOVE.W  -(A4),-(A2)
+00004070  2738 1234                 41      MOVE.L  $1234,-(A3)
+00004074  2739 000A1234             42      MOVE.L  $000A1234,-(A3)
+0000407A  193C 001A                 43      MOVE.B  #$1A,-(A4)
+0000407E  393C 1A1A                 44      MOVE.W  #$1A1A,-(A4)
+00004082  293C 1F1A1F1A             45      MOVE.L  #$1F1A1F1A,-(A4)
+00004088                            46  
+00004088  11C0 23BC                 47      MOVE.B  D0,$23BC
+0000408C  31C9 23BC                 48      MOVE.W  A1,$23BC
+00004090  21D2 23BC                 49      MOVE.L  (A2),$23BC
+00004094  31DB 23BC                 50      MOVE.W  (A3)+,$23BC
+00004098  31E4 23BC                 51      MOVE.W  -(A4),$23BC
+0000409C  21F8 1234 23BC            52      MOVE.L  $1234,$23BC
+000040A2  21F9 000A1234 23BC        53      MOVE.L  $000A1234,$23BC
+000040AA  11FC 001A 23BC            54      MOVE.B  #$1A,$23BC
+000040B0  31FC 1A1A 23BC            55      MOVE.W  #$1A1A,$23BC
+000040B6  21FC 1F1A1F1A 23BC        56      MOVE.L  #$1F1A1F1A,$23BC
+000040BE                            57  
+000040BE  13C0 23BC45EF             58      MOVE.B  D0,$23BC45EF
+000040C4  33C9 23BC45EF             59      MOVE.W  A1,$23BC45EF
+000040CA  23D2 23BC45EF             60      MOVE.L  (A2),$23BC45EF
+000040D0  33DB 23BC45EF             61      MOVE.W  (A3)+,$23BC45EF
+000040D6  33E4 23BC45EF             62      MOVE.W  -(A4),$23BC45EF
+000040DC  23F8 1234 23BC45EF        63      MOVE.L  $1234,$23BC45EF
+000040E4  23F9 000A1234 23BC45EF    64      MOVE.L  $000A1234,$23BC45EF
+000040EE  13FC 001A 23BC45EF        65      MOVE.B  #$1A,$23BC45EF
+000040F6  33FC 1A1A 23BC45EF        66      MOVE.W  #$1A1A,$23BC45EF
+000040FE  23FC 1F1A1F1A 23BC45EF    67      MOVE.L  #$1F1A1F1A,$23BC45EF
+00004108                            68  
+00004108                            69      END    $4000
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------

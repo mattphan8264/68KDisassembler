@@ -1,0 +1,40 @@
+    ORG     $4000
+
+    MOVEA.W D0,A1
+    MOVEA.L D0,A2
+    MOVEA.W A2,A3
+    MOVEA.L A2,A4
+    MOVEA.W (A2)+,A5
+    MOVEA.L (A2)+,A6
+    MOVEA.W -(A2),A1
+    MOVEA.L -(A2),A1
+
+    MOVEA.W $0002,A1
+    MOVEA.W $5002,A1
+    MOVEA.W $9004,A1
+    MOVEA.W $FFFF,A1
+
+    MOVEA.W $00000002,A1
+    MOVEA.W $00005002,A1
+    MOVEA.W $00009004,A1
+    MOVEA.W $0000FFFF,A1
+
+    MOVEA.L $0002,A1
+    MOVEA.L $5002,A1
+    MOVEA.L $9004,A1
+    MOVEA.L $FFFF,A1
+
+    MOVEA.L $00000002,A1
+    MOVEA.L $00005002,A1
+    MOVEA.L $00009004,A1
+    MOVEA.L $0000FFFF,A1
+
+    END    $4000
+
+
+
+
+*~Font name~Courier New~
+*~Font size~10~
+*~Tab type~1~
+*~Tab size~4~

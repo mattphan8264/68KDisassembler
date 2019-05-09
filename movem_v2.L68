@@ -1,0 +1,51 @@
+00009000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 3/11/2019 8:59:05 PM
+
+00000000                             1  *-----------------------------------------------------------
+00000000                             2  * Title      :
+00000000                             3  * Written by :
+00000000                             4  * Date       :
+00000000                             5  * Description:
+00000000                             6  *-----------------------------------------------------------
+00009000                             7      ORG    $9000
+00009000                             8  START:                  ; first instruction of program
+00009000                             9  
+00009000  2E7C 00001000             10      MOVEA.L     #$1000,SP
+00009006  103C 0001                 11      MOVE.B      #$1,D0
+0000900A  323C 0015                 12      MOVE.W      #$15,D1
+0000900E  343C 0002                 13      MOVE.W      #$2,D2
+00009012  263C 00123431             14      MOVE.L      #$123431,D3
+00009018  183C 0004                 15      MOVE.B      #$4,D4
+0000901C  1A3C 0005                 16      MOVE.B      #$5,D5
+00009020  1C3C 0006                 17      MOVE.B      #$6,D6
+00009024  3E3C 0007                 18      MOVE.W      #$7,D7
+00009028  227C 00001234             19      MOVEA.L     #$1234,A1
+0000902E  347C 0021                 20      MOVEA.W     #$21,A2
+00009032  367C 0032                 21      MOVEA.W     #$32,A3
+00009036  387C 0043                 22      MOVEA.W     #$43,A4
+0000903A  2A7C 00000054             23      MOVEA.L     #$54,A5
+00009040  2C7C 00000065             24      MOVEA.L     #$65,A6
+00009046                            25      
+00009046  48A7 B000                 26      MOVEM.W     D0/D2/D3,-(SP)
+0000904A  4C9F 000D                 27      MOVEM.W     (SP)+,D0/D2/D3
+0000904E  48E7 F07E                 28      MOVEM.L     A1-A6/D0-D3,-(SP)
+00009052  4CDF 7E0F                 29      MOVEM.L     (SP)+,A1-A6/D0-D3
+00009056  48E7 5EF7                 30      MOVEM.L     D1/D3-D5/D6/A0-A3/A5-A7,-(SP)
+0000905A  4CDF EF7A                 31      MOVEM.L     (SP)+,D1/D3-D5/D6/A0-A3/A5-A7
+0000905E  48A7 5EF7                 32      MOVEM.W     D1/D3-D5/D6/A0-A3/A5-A7,-(SP)
+00009062  4C9F EF7A                 33      MOVEM.W     (SP)+,D1/D3-D5/D6/A0-A3/A5-A7
+00009066                            34      
+00009066                            35      
+00009066                            36  * Put variables and constants here
+00009066                            37  
+00009066                            38      END    START        ; last line of source
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------
+START               9000

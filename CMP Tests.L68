@@ -1,0 +1,29 @@
+00009000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 3/16/2019 6:45:12 PM
+
+00009000                             1      ORG    $9000
+00009000                             2  
+00009000  B83C 001A                  3      CMP.B   #$1A,D4
+00009004  B87C 1A1A                  4      CMP.W   #$1A1A,D4
+00009008  B8BC 1F1A1F1A              5      CMP.L   #$1F1A1F1A,D4
+0000900E  B200                       6      CMP.B   D0,D1
+00009010  B249                       7      CMP.W   A1,D1
+00009012  B292                       8      CMP.L   (A2),D1
+00009014  B45B                       9      CMP.W   (A3)+,D2
+00009016  B464                      10      CMP.W   -(A4),D2
+00009018  B6B8 1234                 11      CMP.L   $1234,D3
+0000901C  B6B9 000A1234             12      CMP.L   $000A1234,D3
+00009022  B83C 001A                 13      CMP.B   #$1A,D4
+00009026  B87C 1A1A                 14      CMP.W   #$1A1A,D4
+0000902A  B8BC 1F1A1F1A             15      CMP.L   #$1F1A1F1A,D4
+00009030                            16  
+00009030                            17      END    $9000
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------
